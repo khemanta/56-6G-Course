@@ -1,0 +1,219 @@
+\documentclass[12pt,oneside,openany]{report}
+
+% Page geometry
+\usepackage[a4paper,left=2.0cm,right=2.25cm,top=2.25cm,bottom=2.25cm]{geometry}
+
+% Fonts and symbols
+\usepackage{fontawesome5}
+\usepackage{fontspec}
+\setmainfont{Arial} % or replace with Garamond/libertine/Garamond, etc.
+\usepackage{amssymb}
+\usepackage{emoji}
+
+% Lists and enumerations
+\usepackage{enumitem}
+
+% Math and graphics
+\usepackage{graphicx}
+\usepackage{tikz}
+\usetikzlibrary{3d, shapes.geometric, arrows.meta, positioning}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.18}
+
+\usepackage[absolute]{textpos}
+
+% Colors and backgrounds
+\usepackage{xcolor}
+\usepackage{pagecolor}
+\definecolor{tutorialbg}{RGB}{245,245,240}
+\definecolor{assignmentbg}{RGB}{240,248,255}
+\definecolor{stardustbg}{RGB}{225,246,255}
+\definecolor{pastelyellowbg}{RGB}{255,255,245}
+\definecolor{nav}{rgb}{0.00, 0.2, 0.4}
+\definecolor{mrn}{rgb}{0.52, 0.0, 0.0}
+\definecolor{blu}{rgb}{0.52, 0.1, 1.0}
+
+% Hyperlinks
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks,
+    citecolor=nav,
+    filecolor=mrn,
+    linkcolor=mrn,
+    urlcolor=mrn
+}
+
+% Custom box
+\usepackage[most]{tcolorbox}
+\newtcolorbox{mytextbox}[1][]{%
+  sharp corners,
+  enhanced,
+  colback=white,
+  height=10cm,
+  attach title to upper,
+  #1
+}
+
+% Algorithms and code
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+\usepackage{listings}
+\definecolor{codegray}{gray}{0.9}
+\definecolor{codered}{rgb}{0.6,0,0}
+\definecolor{codeblue}{rgb}{0,0,0.6}
+\lstdefinestyle{mystyle}{
+  backgroundcolor=\color{codegray},
+  commentstyle=\color{codered},
+  keywordstyle=\color{codeblue},
+  numberstyle=\tiny\color{gray},
+  stringstyle=\color{purple},
+  basicstyle=\ttfamily\footnotesize,
+  breakatwhitespace=false,
+  breaklines=true,
+  captionpos=b,
+  keepspaces=true,
+  numbers=left,
+  numbersep=5pt,
+  showspaces=false,
+  showstringspaces=false,
+  showtabs=false,
+  tabsize=2
+}
+\lstset{style=mystyle, language=Python}
+
+% Styling chapters and sections
+\usepackage{sectsty}
+\chapterfont{\color{mrn}}
+\partfont{\color{mrn}}
+\sectionfont{\color{nav}}
+\subsectionfont{\color{nav}}
+\subsubsectionfont{\color{nav}}
+
+% Title and TOC formatting
+\renewcommand{\contentsname}{\hfill </.{\it Table of Contents} >}
+\setcounter{tocdepth}{1}
+
+% Fancy header/footer
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[R]{\color{mrn}\thesection}
+\fancyfoot[R]{\color{gray} {\it \small Lecture Notes by Hemant, K.} \hspace{0.1em}\color{mrn} | \thepage}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\fancypagestyle{plain}{%
+  \fancyhf{}
+  \fancyfoot[R]{\color{lightgray}\thepage}
+  \renewcommand{\headrulewidth}{0pt}
+  \renewcommand{\footrulewidth}{0pt}
+}
+
+% Part/chapter/section formatting
+\usepackage{chngcntr}
+\counterwithin*{chapter}{part}
+\renewcommand{\thepart}{\arabic{part}}
+\renewcommand\thechapter{\arabic{chapter}} %\thepart.\arabic{chapter}}
+\renewcommand\thesection{\thechapter.\arabic{section}} %\thechapter.\arabic{section}}
+\renewcommand\thesubsection{\thesection.\arabic{subsection}} %\thesection.\arabic{subsection}}
+\renewcommand\partname{Week}
+\renewcommand{\chaptername}{>> Lecture /}
+
+% Appendix formatting
+\let\oldappendix\appendix
+\renewcommand{\appendix}{
+    \renewcommand{\thesection}{\alph{section}}
+    \oldappendix}
+
+% Tables
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{booktabs}
+\usepackage{bookmark}
+
+% Font
+\usepackage{libertine} % Libertine font family
+
+% Line spacing
+\usepackage{parskip}
+
+% Title setup
+%%%-----------------------------------------------------------------------------------%%%
+\title{\color{mrn} \Huge \bfseries  $\faWifi$ Beyond 5G: Foundations and Future of Mobile Communication $\faWifi$  \\ {\it Lecture Notes and Exercises on 5G and 6G Technologies}}
+\author{Hemant, K.} 
+\date{
+\makebox[\textwidth]{\includegraphics[width=1.0\paperwidth]{./figures/5g6g.png}}
+}
+% Document begins
+%%%-----------------------------------------------------------------------------------%%%
+\begin{document}  
+\sloppy  % This will apply sloppy line-breaking to the entire document
+\pagecolor{stardustbg}
+\maketitle
+\clearpage
+% \pagecolor{white}
+%%%-----------------------------------------------------------------------------------%%%
+
+\thispagestyle{empty}
+\input{./matter/copyright.tex}
+\clearpage
+\pagecolor{white}
+
+\tableofcontents
+
+\input{./chapters/topic1.tex}   % Week 1: Introduction
+
+\input{./chapters/topic2.tex}   % Week 2
+\input{./chapters/topic3.tex}   % Week 3
+\input{./chapters/topic4.tex}   % Week 4
+\input{./chapters/topic5.tex}   % Week 5
+\input{./chapters/topic6.tex}   % Week 6
+% \input{./chapters/topic7.tex}   % Week 7
+% \input{./chapters/topic8.tex}   % Week 8: Exercises
+
+% \input{./modules/week01_intro5G6G.tex}  % Week 1: Introduction
+% \input{./modules/week02_5G_architecture.tex}   % Week 2
+% \input{./modules/week03_radio_networks.tex}    % Week 3
+% \input{./modules/week04_5G_applications.tex}   % Week 4
+% \input{./modules/week05_beyond5G.tex}          % Week 5
+% \input{./modules/week06_intro6G.tex}           % Week 6
+% \input{./modules/week07_6G_AIblockchain.tex}   % Week 7
+% \input{./modules/week08_exercises.tex}         % Week 8: Exercises
+\clearpage
+
+\appendix
+\input{./chapters/appendix-A1.tex}
+\input{./chapters/appendix-A2.tex}
+\input{./chapters/appendix-A3.tex}
+\input{./chapters/appendix-A4.tex}
+\input{./chapters/appendix-A5.tex}
+% \input{a./chapters/ppendix-A6.tex}
+
+\clearpage
+
+
+
+\thispagestyle{empty}
+
+
+
+\vfill
+
+% \begin{center}
+% % \begin{textblock*}{297mm}(0mm,0mm)
+%      \includegraphics[width=0.85\textwidth, angle=0]{./figures/5g6g.png}
+% % \end{textblock*}
+% \end{center}
+
+%%% The last page of the report
+\clearpage
+\pagecolor{stardustbg}
+\thispagestyle{empty}
+\begin{tikzpicture}[remember picture, overlay]
+  \node[anchor=south west, inner sep=0] at (current page.south west) {
+    \includegraphics[width=\paperwidth]{./figures/5g6g.png} %,height=\paperheight
+  }; 
+\end{tikzpicture}
+\clearpage
+
+\clearpage
+\end{document}

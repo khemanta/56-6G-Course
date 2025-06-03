@@ -1,0 +1,114 @@
+\contentsline {chapter}{\numberline {1}Introduction to Wireless Communication}{4}{chapter.0.1}%
+\contentsline {section}{\numberline {1.1}Cellular Network Fundamentals}{4}{section.0.1.1}%
+\contentsline {subsection}{\numberline {1.1.1}What is Wireless Communication?}{4}{subsection.0.1.1.1}%
+\contentsline {subsection}{\numberline {1.1.2}Basic Terminology}{4}{subsection.0.1.1.2}%
+\contentsline {section}{\numberline {1.2}Generations of Mobile Networks}{4}{section.0.1.2}%
+\contentsline {subsection}{\numberline {1.2.1}From 1G to 5G}{4}{subsection.0.1.2.1}%
+\contentsline {subsection}{\numberline {1.2.2}Key Performance Metrics}{4}{subsection.0.1.2.2}%
+\contentsline {section}{\numberline {1.3}The Cellular Concept}{5}{section.0.1.3}%
+\contentsline {subsection}{\numberline {1.3.1}Cell Reuse and Frequency Planning}{5}{subsection.0.1.3.1}%
+\contentsline {subsection}{\numberline {1.3.2}Hexagonal Cell Approximation}{5}{subsection.0.1.3.2}%
+\contentsline {subsection}{\numberline {1.3.3}Interference and SINR}{5}{subsection.0.1.3.3}%
+\contentsline {section}{\numberline {1.4}Visualizing Wireless Signals}{5}{section.0.1.4}%
+\contentsline {subsection}{\numberline {1.4.1}Path Loss Models}{5}{subsection.0.1.4.1}%
+\contentsline {subsection}{\numberline {1.4.2}Interactive Visualizations (Notebook/Streamlit)}{5}{subsection.0.1.4.2}%
+\contentsline {section}{\numberline {1.5}Summary}{5}{section.0.1.5}%
+\contentsline {section}{\numberline {1.6}Further Reading}{5}{section.0.1.6}%
+\contentsline {section}{\numberline {1.7}Appendix A1: Signal Strength and Path Loss Notebook}{6}{section.0.1.7}%
+\contentsline {section}{\numberline {1.8}Appendix A2: Streamlit App – Cell Coverage Planner}{6}{section.0.1.8}%
+\contentsline {chapter}{\numberline {2}Spectrum and Modulation in 5G}{7}{chapter.0.2}%
+\contentsline {section}{\numberline {2.1}Introduction}{7}{section.0.2.1}%
+\contentsline {section}{\numberline {2.2}Spectrum Overview}{7}{section.0.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}Licensed vs Unlicensed Bands}{7}{subsection.0.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.2}5G Spectrum Ranges}{7}{subsection.0.2.2.2}%
+\contentsline {section}{\numberline {2.3}Modulation Techniques in 5G}{7}{section.0.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}Why Modulate?}{7}{subsection.0.2.3.1}%
+\contentsline {subsection}{\numberline {2.3.2}OFDM – Orthogonal Frequency Division Multiplexing}{7}{subsection.0.2.3.2}%
+\contentsline {subsection}{\numberline {2.3.3}Other Modulation Techniques}{8}{subsection.0.2.3.3}%
+\contentsline {section}{\numberline {2.4}Appendix: A2 – OFDM Signal Simulation}{8}{section.0.2.4}%
+\contentsline {section}{\numberline {2.5}References}{8}{section.0.2.5}%
+\contentsline {chapter}{\numberline {3}Multiple Access and Scheduling}{9}{chapter.0.3}%
+\contentsline {section}{\numberline {3.1}Introduction}{9}{section.0.3.1}%
+\contentsline {section}{\numberline {3.2}Multiple Access Techniques}{9}{section.0.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Frequency Division Multiple Access (FDMA)}{9}{subsection.0.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}Time Division Multiple Access (TDMA)}{9}{subsection.0.3.2.2}%
+\contentsline {subsection}{\numberline {3.2.3}Orthogonal Frequency Division Multiple Access (OFDMA)}{10}{subsection.0.3.2.3}%
+\contentsline {subsection}{\numberline {3.2.4}Non-Orthogonal Multiple Access (NOMA)}{10}{subsection.0.3.2.4}%
+\contentsline {section}{\numberline {3.3}Scheduling Strategies}{11}{section.0.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}Round Robin (RR) Scheduler}{11}{subsection.0.3.3.1}%
+\contentsline {subsection}{\numberline {3.3.2}Proportional Fair (PF) Scheduler}{11}{subsection.0.3.3.2}%
+\contentsline {section}{\numberline {3.4}Comparative Overview}{12}{section.0.3.4}%
+\contentsline {section}{\numberline {3.5}Conclusion}{12}{section.0.3.5}%
+\contentsline {chapter}{\numberline {4}Channel Estimation and Equalization}{13}{chapter.0.4}%
+\contentsline {section}{\numberline {4.1}Introduction}{13}{section.0.4.1}%
+\contentsline {section}{\numberline {4.2}Channel Effects}{13}{section.0.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Multipath Fading}{13}{subsection.0.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}Noise and Doppler Effects}{13}{subsection.0.4.2.2}%
+\contentsline {section}{\numberline {4.3}Channel Models}{13}{section.0.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Flat Fading vs. Frequency Selective Fading}{13}{subsection.0.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}Mathematical Model}{13}{subsection.0.4.3.2}%
+\contentsline {section}{\numberline {4.4}Channel Estimation Techniques}{14}{section.0.4.4}%
+\contentsline {subsection}{\numberline {4.4.1}Pilot-Based Estimation}{14}{subsection.0.4.4.1}%
+\contentsline {subsection}{\numberline {4.4.2}Least Squares (LS) Estimation}{14}{subsection.0.4.4.2}%
+\contentsline {subsection}{\numberline {4.4.3}Minimum Mean Squared Error (MMSE) Estimation}{14}{subsection.0.4.4.3}%
+\contentsline {section}{\numberline {4.5}Equalization Techniques}{14}{section.0.4.5}%
+\contentsline {subsection}{\numberline {4.5.1}Zero Forcing Equalizer (ZF)}{14}{subsection.0.4.5.1}%
+\contentsline {subsection}{\numberline {4.5.2}MMSE Equalizer}{14}{subsection.0.4.5.2}%
+\contentsline {section}{\numberline {4.6}OFDM Channel Estimation}{14}{section.0.4.6}%
+\contentsline {section}{\numberline {4.7}Conclusion}{15}{section.0.4.7}%
+\contentsline {chapter}{\numberline {5}MIMO and Beamforming}{16}{chapter.0.5}%
+\contentsline {section}{\numberline {5.1}Introduction to MIMO Systems}{16}{section.0.5.1}%
+\contentsline {section}{\numberline {5.2}Spatial Multiplexing}{16}{section.0.5.2}%
+\contentsline {section}{\numberline {5.3}Diversity Gain vs. Multiplexing Gain}{16}{section.0.5.3}%
+\contentsline {subsection}{\numberline {5.3.1}Diversity Gain}{16}{subsection.0.5.3.1}%
+\contentsline {subsection}{\numberline {5.3.2}Multiplexing Gain}{16}{subsection.0.5.3.2}%
+\contentsline {section}{\numberline {5.4}Channel Capacity of MIMO}{16}{section.0.5.4}%
+\contentsline {section}{\numberline {5.5}Beamforming Concepts}{16}{section.0.5.5}%
+\contentsline {subsection}{\numberline {5.5.1}Analog Beamforming}{17}{subsection.0.5.5.1}%
+\contentsline {subsection}{\numberline {5.5.2}Digital Beamforming}{17}{subsection.0.5.5.2}%
+\contentsline {subsection}{\numberline {5.5.3}Hybrid Beamforming}{17}{subsection.0.5.5.3}%
+\contentsline {section}{\numberline {5.6}Antenna Arrays and Steering Vectors}{17}{section.0.5.6}%
+\contentsline {section}{\numberline {5.7}Practical Exploration (See Appendix)}{17}{section.0.5.7}%
+\contentsline {section}{\numberline {5.8}References and Further Reading}{17}{section.0.5.8}%
+\contentsline {section}{\numberline {5.9}Appendix: Notebook and Streamlit App}{17}{section.0.5.9}%
+\contentsline {chapter}{\numberline {6}Massive MIMO \& mmWave Communication}{18}{chapter.0.6}%
+\contentsline {section}{\numberline {6.1}Introduction to Massive MIMO}{18}{section.0.6.1}%
+\contentsline {subsection}{\numberline {6.1.1}Key Benefits}{18}{subsection.0.6.1.1}%
+\contentsline {section}{\numberline {6.2}mmWave Communication Fundamentals}{18}{section.0.6.2}%
+\contentsline {subsection}{\numberline {6.2.1}Challenges}{19}{subsection.0.6.2.1}%
+\contentsline {section}{\numberline {6.3}Propagation at mmWave Frequencies}{19}{section.0.6.3}%
+\contentsline {section}{\numberline {6.4}Beamforming: Analog, Digital, Hybrid}{19}{section.0.6.4}%
+\contentsline {section}{\numberline {6.5}MIMO Channel Capacity}{19}{section.0.6.5}%
+\contentsline {section}{\numberline {6.6}Use Cases}{19}{section.0.6.6}%
+\contentsline {section}{\numberline {6.7}Summary}{20}{section.0.6.7}%
+\contentsline {section}{\numberline {6.8}Further Reading}{20}{section.0.6.8}%
+\contentsline {chapter}{\numberline {A}Appendix: Signal Strength and Path Loss Visualization}{21}{appendix.A}%
+\contentsline {section}{\numberline {a}Overview}{21}{section.A.1}%
+\contentsline {section}{\numberline {b}Simulation}{21}{section.A.2}%
+\contentsline {subsection}{\numberline {b.1}Notebook}{22}{subsection.A.2.1}%
+\contentsline {subsection}{\numberline {b.2}Interactive Streamlit App}{22}{subsection.A.2.2}%
+\contentsline {section}{\numberline {c}References}{22}{section.A.3}%
+\contentsline {chapter}{\numberline {B}Appendix: Modulation and Spectrum Simulation}{23}{appendix.B}%
+\contentsline {section}{\numberline {a}Interactive OFDM Simulation Notebook}{23}{section.B.1}%
+\contentsline {subsection}{\numberline {a.1}Modulation Scheme Explorer (Optional Streamlit App)}{23}{subsection.B.1.1}%
+\contentsline {subsection}{\numberline {a.2}Learning Outcomes}{24}{subsection.B.1.2}%
+\contentsline {chapter}{\numberline {C}Appendix: Multiple Access and Scheduling Simulations}{25}{appendix.C}%
+\contentsline {subsection}{\numberline {.1}A3\_multiple\_access\_simulation.ipynb}{25}{subsection.C.0.1}%
+\contentsline {subsection}{\numberline {.2}SchedulerVisualizer.py (Streamlit App)}{25}{subsection.C.0.2}%
+\contentsline {subsection}{\numberline {.3}Figures Used in This Chapter}{26}{subsection.C.0.3}%
+\contentsline {subsection}{\numberline {C.0.4}Notebook Simulation: \texttt {A4\_channel\_equalization.ipynb}}{27}{subsection.C.0.4}%
+\contentsline {subsection}{\numberline {C.0.5}Streamlit App (Optional)}{27}{subsection.C.0.5}%
+\contentsline {subsection}{\numberline {C.0.6}Visualization of Equalized Symbols}{27}{subsection.C.0.6}%
+\contentsline {section}{\numberline {C.1}Additional Appendix: Channel Estimation and Equalization Simulation}{28}{section.C.1}%
+\contentsline {subsection}{\numberline {C.1.1}Overview}{28}{subsection.C.1.1}%
+\contentsline {subsection}{\numberline {C.1.2}Interactive Notebook: \texttt {A4\_channel\_equalization.ipynb}}{28}{subsection.C.1.2}%
+\contentsline {subsection}{\numberline {C.1.3}Streamlit App: EqualizerSimulator.py}{28}{subsection.C.1.3}%
+\contentsline {subsection}{\numberline {C.1.4}Example Constellation Plot}{29}{subsection.C.1.4}%
+\contentsline {subsection}{\numberline {C.1.5}References}{29}{subsection.C.1.5}%
+\contentsline {chapter}{\numberline {D}Appendix: MIMO \& Beamforming Simulation}{30}{appendix.D}%
+\contentsline {section}{\numberline {D.1}MIMO \& Beamforming Simulation}{30}{section.D.1}%
+\contentsline {subsection}{\numberline {D.1.1}Overview}{30}{subsection.D.1.1}%
+\contentsline {subsection}{\numberline {D.1.2}Jupyter Notebook: MIMO and Beamforming Simulation}{30}{subsection.D.1.2}%
+\contentsline {subsection}{\numberline {D.1.3}Interactive Streamlit App: Beam Pattern Visualizer}{30}{subsection.D.1.3}%
+\contentsline {subsection}{\numberline {D.1.4}Key Learnings}{31}{subsection.D.1.4}%
+\contentsline {subsection}{\numberline {D.1.5}References}{31}{subsection.D.1.5}%

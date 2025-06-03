@@ -1,0 +1,58 @@
+% #📘 Chapter 5: MIMO \& Beamforming
+
+\chapter{MIMO and Beamforming}
+
+\section{Introduction to MIMO Systems}
+Multiple-Input Multiple-Output (MIMO) is a fundamental technology in modern wireless communication systems, enabling high data rates and improved reliability. By using multiple antennas at both the transmitter and receiver, MIMO exploits multipath propagation to improve link capacity and robustness.
+
+\section{Spatial Multiplexing}
+Spatial multiplexing allows multiple data streams to be transmitted simultaneously over the same frequency band, effectively increasing the spectral efficiency. Each stream is transmitted from a different antenna and ideally received without interference.
+
+\section{Diversity Gain vs. Multiplexing Gain}
+\subsection{Diversity Gain}
+Improves reliability by sending the same data across multiple antennas.
+
+\subsection{Multiplexing Gain}
+Increases capacity by transmitting independent data streams.
+
+The diversity-multiplexing tradeoff must be carefully considered during system design.
+
+\section{Channel Capacity of MIMO}
+For an $N_t \times N_r$ MIMO system, the channel capacity is given by:
+\[
+C = \log_2 \det \left( I + \frac{\rho}{N_t} HH^H \right) \text{ bits/s/Hz}
+\]
+where $H$ is the channel matrix, $\rho$ is the SNR, and $H^H$ is the Hermitian transpose.
+
+\section{Beamforming Concepts}
+\subsection{Analog Beamforming}
+Single RF chain, phase shifters applied in analog domain.
+
+\subsection{Digital Beamforming}
+Each antenna has its own RF chain, allowing full spatial control.
+
+\subsection{Hybrid Beamforming}
+Combines analog and digital techniques to reduce hardware complexity while maintaining performance.
+
+\section{Antenna Arrays and Steering Vectors}
+Beamforming is implemented by adjusting the phases across antenna elements. For a Uniform Linear Array (ULA), the steering vector for angle $\theta$ is:
+\[
+\mathbf{a}(\theta) = \left[1, e^{-jkd\sin(\theta)}, \ldots, e^{-jkd(N-1)\sin(\theta)} \right]^T
+\]
+
+\section{Practical Exploration (See Appendix)}
+A detailed simulation and visualization of MIMO and beamforming concepts is provided in the accompanying Jupyter notebook and optional Streamlit app.
+
+\section{References and Further Reading}
+\begin{itemize}
+  \item Goldsmith, A. (2005). \textit{Wireless Communications}. Cambridge University Press.
+  \item Tse, D., \& Viswanath, P. (2005). \textit{Fundamentals of Wireless Communication}.
+  \item Heath, R. W., \& Lozano, A. (2018). \textit{Foundations of MIMO Communication}.
+  \item \texttt{https://web.mit.edu/6.450/www/} – Advanced Digital Communication resources.
+\end{itemize}
+
+\section{Appendix: Notebook and Streamlit App}
+\begin{itemize}
+  \item \textbf{Notebook:} \texttt{A5\_mimo\_beamforming\_simulation.ipynb} includes MIMO capacity simulations, beam pattern visualizations, and interactive antenna exploration.
+  \item \textbf{Streamlit App:} \texttt{BeamPatternVisualizer.py} (optional) enables real-time exploration of beamforming patterns under different configurations.
+\end{itemize}
